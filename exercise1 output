@@ -1,0 +1,9 @@
+Enter the number of elements you want to store: 3
+Enter the elements of the array : 
+22
+31
+9
+Array elements are : 
+array[0] = 22
+array[1] = 31
+array[2] = 9
