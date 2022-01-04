@@ -1,0 +1,42 @@
+package arrayName;
+import java.util.Scanner;
+public class SaleArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        Scanner sc = new Scanner(System.in);
+		
+		double[] sales = new double [10];
+		int index, maxIndex;
+		double sum, average;
+		
+		sum = 0;
+		
+		System.out.print("Please enter the sales number: ");
+		for(index = 0; index < sales.length; index++) {
+			sales[index] = sc.nextDouble();
+			sum = sum + sales[index];
+			
+		}
+		
+		System.out.println();
+		
+		for(index = 0; index < sales.length; index++) {
+			System.out.println("RM " + sales[index] + " ");
+		}
+		
+		if(sales.length !=0)
+			average = sum / sales.length;
+		else
+			average = 0.0;
+		
+		System.out.println();
+		
+		System.out.println(average);
+
+	}
+
+}
+	
+
+
